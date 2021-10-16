@@ -1,0 +1,319 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-color: #030303; }
+
+.logo {
+  display: flex;
+  height: 260px;
+  justify-content: center;
+  margin-bottom: -40px; }
+
+.colorBoton {
+  background-color: #eeee06; }
+
+.menu {
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  font-size: larger;
+  list-style: none;
+  margin-bottom: 1%;
+  background-color: #eeee06;
+  height: 45px; }
+
+.items {
+  padding-left: 170px; }
+
+nav a {
+  color: #030303;
+  text-decoration: none; }
+
+.grilla {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 600px 200px;
+  grid-template-areas: "fondo fondo fondo fondo"
+ "footer footer footer footer"; }
+
+.imagenFondo {
+  grid-area: fondo; }
+
+.imagenFondoRelleno {
+  width: 100%;
+  height: 550px; }
+
+.grilla__div {
+  grid-area: footer;
+  width: 100%;
+  height: 100%; }
+
+.textoMainTitulo {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  color: #eeee06;
+  margin-top: 5px;
+  margin-bottom: 5px; }
+
+.textoMainParrafo {
+  font-weight: bolder;
+  text-align: justify;
+  line-height: 1.5;
+  margin-left: 5px;
+  margin-right: 5px;
+  grid-area: footer;
+  height: 90%;
+  width: 99%; }
+
+.formularioEmail {
+  background-color: #eeee06;
+  border: 1px solid black;
+  height: 70px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%; }
+
+.formularioEmailTexto {
+  color: #030303;
+  font-weight: bolder;
+  font-size: large;
+  display: inline-block;
+  margin-top: 20px;
+  justify-content: center; }
+
+.formularioEmailInput {
+  width: 45%;
+  height: 20px; }
+
+.formularioEmailButton {
+  width: 36px;
+  height: 20px;
+  font-weight: bolder;
+  font-size: 11px;
+  position: absolute;
+  margin-top: 23px; }
+
+h4 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bolder;
+  display: inline-block;
+  font-size: 20px;
+  color: #eeee06; }
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 2px;
+  color: white; }
+
+.contacto {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 40px  25px  25px 25px;
+  grid-template-areas: "Pago  direccion   contacto"
+ "Pago  direccion   contacto"
+ "Pago  direccion   contacto"
+ "Pago  direccion   contacto"; }
+
+.mediosDePago {
+  grid-area: Pago;
+  margin-left: 15%; }
+
+.mediosDeContacto {
+  grid-area: direccion;
+  margin-left: 25%; }
+
+.redesSociales {
+  grid-area: contacto;
+  margin-left: 49%; }
+
+.perfil {
+  display: grid;
+  border: 2px solid black;
+  background-image: linear-gradient(black, #292929);
+  margin-bottom: 5px;
+  margin-left: 5%;
+  height: 265px;
+  width: 92%;
+  grid-template-columns: 40% 48%;
+  grid-template-rows: 40% 60%;
+  grid-template-areas: "foto nombre"
+ "foto texto"; }
+
+.perfilFoto {
+  width: 100%;
+  height: 95%;
+  border: 1px solid black;
+  grid-area: foto; }
+
+.perfilTitulo {
+  color: #eeee06;
+  margin-left: 52%;
+  margin-top: 65px;
+  grid-area: nombre; }
+
+.perfilTexto {
+  text-align: justify;
+  margin-left: 25%;
+  grid-area: texto;
+  width: 90%; }
+
+.perfilTitulo__Servicios {
+  color: #eeee06;
+  margin-left: 40%;
+  margin-top: 20px;
+  grid-area: nombre; }
+
+.perfilTitulo__Servicios2 {
+  color: #eeee06;
+  margin-left: 48%;
+  margin-top: 20px;
+  grid-area: nombre; }
+
+.galeriaFoto {
+  width: 100%;
+  height: 230px;
+  margin-bottom: 10px;
+  border: 1px solid black; }
+
+.contactoTitulo {
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #eeee06;
+  font-size: 40px;
+  margin-bottom: 5px; }
+
+.formParrafo {
+  font-weight: 600; }
+
+fieldset {
+  border: solid black 1px;
+  background-image: linear-gradient(black, #222222); }
+
+legend {
+  font-size: 20px; }
+
+.contactoTexto {
+  margin-left: 5px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: white; }
+
+@media only screen and (max-width: 1024px) {
+  .menu {
+    height: 100%; } }
+
+@media only screen and (max-width: 966px) {
+  .perfil {
+    margin-bottom: 5px;
+    margin-left: 10%;
+    height: 150px;
+    width: 88%;
+    grid-template-columns: 35% 43%;
+    grid-template-rows: 50px 100px; }
+  .perfilFoto {
+    width: 100%;
+    height: 95%; }
+  .perfilTitulo {
+    margin-left: 45%;
+    margin-top: 20px;
+    font-size: 18px; }
+  .perfilTitulo__Servicios {
+    margin-left: 45%;
+    margin-top: 20px;
+    font-size: 14px; }
+  .perfilTitulo__Servicios2 {
+    margin-left: 45%;
+    margin-top: 20px;
+    font-size: 16px; }
+  .perfilTexto {
+    font-size: 11px; } }
+
+@media only screen and (max-width: 760px) {
+  .perfilTexto {
+    font-size: 9px; }
+  .perfilTitulo__Servicios2 {
+    font-size: 14px; } }
+
+@media only screen and (max-width: 550px) {
+  .imagenFondo {
+    width: 99%; }
+  .imagenFondoRelleno {
+    height: 400px; }
+  .grilla {
+    grid-template-rows: 450px 200px; }
+  .formularioEmail {
+    height: 35px;
+    width: 100%; }
+  .formularioEmailTexto {
+    font-size: 12px;
+    margin-top: 15px; }
+  .formularioEmailInput {
+    width: 45%;
+    height: 16px; }
+  .formularioEmailButton {
+    width: 28px;
+    height: 15px;
+    font-size: 8px;
+    margin-top: 15px; }
+  .contacto {
+    grid-template-rows: 20px  13px  13px 13px; }
+  p {
+    font-size: 11px; }
+  h4 {
+    font-size: 16px; }
+  .perfilTitulo__Servicios {
+    font-size: 12px; }
+  .perfilTexto {
+    font-size: 8px; }
+  .galeriaFoto {
+    height: 55px; }
+  .perfilFoto {
+    height: 120px; }
+  .perfilTitulo {
+    font-size: 14px; } }
+
+@media only screen and (max-width: 420px) {
+  .imagenFondoRelleno {
+    height: 380px; }
+  .grilla {
+    height: 390px, 130px; }
+  .perfilTexto {
+    font-size: 7px; }
+  .perfilTitulo {
+    font-size: 11px; }
+  .perfilTitulo__Servicios {
+    font-size: 11px; }
+  .perfilTitulo__Servicios2 {
+    font-size: 12px; }
+  .formularioEmail {
+    height: 30px;
+    width: 100%; }
+  .formularioEmailTexto {
+    font-size: 11px;
+    font-weight: bolder; }
+  .formularioEmailInput {
+    width: 45%;
+    height: 15px; }
+  .formularioEmailButton {
+    width: 24px;
+    height: 12px;
+    font-size: 7px; }
+  .textoMainTitulo {
+    font-size: 30px;
+    margin-top: 0px; }
+  .textoMainParrafo {
+    font-size: 8px; }
+  .contacto {
+    width: 290px; }
+    .contacto h4 {
+      font-size: 10px; }
+    .contacto p {
+      font-size: 8px; } }
