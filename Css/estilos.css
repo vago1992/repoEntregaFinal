@@ -374,6 +374,7 @@ legend {
   .perfil {
     height: 165px;
     width: 350px;
+    margin-left: 20px;
     grid-template-columns: 46% 54%;
     grid-template-rows: 50px 100px; }
   .perfilFoto {
@@ -447,7 +448,9 @@ legend {
     width: 327px; }
   .mapa {
     height: 110px;
-    width: 125px; } }
+    width: 125px; }
+  .perfil {
+    margin-left: 3px; } }
 
 @media only screen and (max-width: 340px) {
   .mapa {
