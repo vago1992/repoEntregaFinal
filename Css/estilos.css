@@ -206,7 +206,7 @@ p {
   transition: height 2s, width 0s; }
 
 .animacionGaleria:hover {
-  height: 450px;
+  height: 451px;
   width: 650px;
   transform: scale(1, 1);
   animation-iteration-count: static; }
