@@ -23,24 +23,14 @@ body {
   list-style: none;
   margin-bottom: 2px;
   background-color: #eeee06;
-  height: 45px; }
-
-.items {
-  padding-left: 200px; }
+  height: 48px; }
 
 nav a {
   color: #030303;
   text-decoration: none; }
 
-.grilla {
-  display: grid;
-  grid-template-columns: 25% 25% 25% 25%;
-  grid-template-rows: 600px 200px;
-  grid-template-areas: "fondo fondo fondo fondo"
- "footer footer footer footer"; }
-
-.imagenFondo {
-  grid-area: fondo; }
+nav li {
+  padding-left: 125px; }
 
 .imagenFondoRelleno {
   width: 100%;
@@ -115,10 +105,7 @@ p {
   width: 100%;
   grid-template-columns: 32% 35% 32%;
   grid-template-rows: 40px  25px  25px 25px;
-  grid-template-areas: "Pago  direccion   contacto"
- "Pago  direccion   contacto"
- "Pago  direccion   contacto"
- "Pago  direccion   contacto"; }
+  grid-template-areas: "Pago  direccion   contacto" "Pago  direccion   contacto" "Pago  direccion   contacto" "Pago  direccion   contacto"; }
 
 .mediosDePago {
   grid-area: Pago;
@@ -160,8 +147,11 @@ p {
   width: 95%;
   grid-template-columns: 40% 60%;
   grid-template-rows: 40% 60%;
-  grid-template-areas: "foto nombre"
- "foto texto"; }
+  grid-template-areas: "foto nombre" "foto texto"; }
+
+.perfil__Medio {
+  grid-template-columns: 60% 40%;
+  grid-template-areas: "nombre foto" "texto foto"; }
 
 .perfilFoto {
   width: 100%;
